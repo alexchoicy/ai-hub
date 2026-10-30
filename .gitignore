@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.ruff_cache/
+
+# Research audio, lyrics and outputs: large and copyrighted, keep local only.
+research/*/data/
+output

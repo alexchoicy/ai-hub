@@ -1,0 +1,33 @@
+[project]
+name = "ai-hub"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "alexchoicy", email = "alex123321choicy@gmail.com" }
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "anyio>=4.15.1",
+    "fastapi>=0.162.0",
+    "httpx>=0.28.1",
+    "qwen-asr>=0.0.6",
+    "torch>=2.15.0",
+    "torchvision>=0.29.2",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+ai-hub = "ai_hub:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+research = [
+    "opencc-python-reimplemented>=0.1.7",
+    "pycantonese>=5.0.0",
+    "pykakasi>=2.3.0",
+    "pypinyin>=0.55.0",
+]
